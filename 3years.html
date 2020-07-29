@@ -1,0 +1,170 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link href="./assets/yessy" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+  <title>3 Years 999</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <audio id="audio" src="./assets/JW_-_Forever.mp3"></audio>
+  <audio id="gt" src="./assets/Good Time.mp3"></audio>
+
+  <link rel="stylesheet" href="index.css">
+
+  <script>
+    // Easter Egg //
+    var count = 0
+function easteregg() {
+  count++;
+  if (count == 10) {
+    var sound = document.getElementById("audio");
+    document.getElementById("foreverlove").innerHTML = "Forever Love 999*";
+    sound.play();
+  }
+  if (count == 20) {
+    var sound = document.getElementById("audio");
+    document.getElementById("foreverlove").innerHTML = "Memories999*";
+    sound.pause();
+  }
+}
+
+    // Easter Egg 2//
+    var count = 0
+function easteregg2() {
+  count++;
+  if (count == 10) {
+    var sound = document.getElementById("gt");
+    document.getElementById("goodtimes").innerHTML = "Good Times 999*";
+    sound.play();
+  }
+  if (count == 20) {
+    var sound = document.getElementById("gt");
+    document.getElementById("goodtimes").innerHTML = "Vacation999*";
+    sound.pause();
+  }
+}
+
+// First Box //
+function firstpop() {
+  var popup = document.getElementById("first");
+  popup.classList.toggle("show");
+}
+function firstclose() {
+  var popup = document.getElementById("close");
+  var actual = document.getElementById("first")
+  actual.classList.toggle("show");
+}
+
+// Second Box //
+function secondpop() {
+  var popup = document.getElementById("second");
+  popup.classList.toggle("show");
+}
+function secondclose() {
+  var popup = document.getElementById("close2");
+  var actual = document.getElementById("second")
+  actual.classList.toggle("show");
+}
+
+  // Third Box //
+function thirdpop() {
+  var popup = document.getElementById("close3");
+  var actual = document.getElementById("third")
+  actual.classList.toggle("show");
+}
+function thirdclose() {
+  var popup = document.getElementById("third");
+  popup.classList.toggle("show");
+}
+
+// NY Box //
+function nypop() {
+  var popup = document.getElementById("ny");
+  popup.classList.toggle("show");
+}
+function nyclose() {
+  var popup = document.getElementById("nyclose");
+  var actual = document.getElementById("ny")
+  actual.classList.toggle("show");
+}
+</script>
+
+</head>
+
+<body>
+  <div class="landscape">
+    <h1 class="warning">Please Rotate Your Phone</h1>
+  </div>
+  <!--<script src="js/scripts.js"></script>-->
+  <div class="parallax">
+    <!--<div class="parallax__layer parallax__layer--back">
+    </div>-->
+    <div class="parallax__layer parallax__layer--base">
+      <div class="container" style="text-align: center;">
+        </a><div class="textcont">
+          <a class="heading">*3*</a>
+          <a class="heading">Years*</a></div>
+      </div>
+      <div class="container2">
+        <div class="memoryhead" id="foreverlove" onclick="easteregg()">Memories999*</div>
+        </a><div class="boxcont">
+          <div class="popcont" id="first"><span class="firstpop"><span id="close" class="close" onclick="firstclose()">X</span> <img class="imagepop" src='./assets/one/PSX_20180602_210024.jpg'><div class="pbreak">
+            <p id="thoughts1" class="thoughts">This was the happiest day in my life. Seeing you for the first time after such a long time made me feel whole again. 
+              It's so hard to express how much you mean to me. To have you in my life is the greatest gift ever. I wish I could relive this day. This was also the day of our first kiss I believe. Onion breath but it was still great. I remember walking back home feeling so damn happy, the happiness was stronger than the sadness that you were leaving. That's how happy you make me ❤️</p>
+              </div>
+            </span>
+          </div>
+            
+          <div class="popcont" id="second">
+            <span class="firstpop" id="firstpop"><span id="close2" class="close" onclick="secondclose()">X</span><img class="imagepop" src='./assets/two/Snapchat-647798265.jpg'>
+              <div class="pbreak">
+                <p class="thoughts">This is one of my favorite memories with you. I remember when we tweeted something about getting cinnabon and they responded. And then we actually got it. It's such a small thing but still made me happy. Being with you just felt so natural. There was no awkwardness. It was a day after our anniversary. I remember you opening your gift and you were so happy. It felt great that I could actually give that to you personally. And you got me big panda ❤️🐼</p>
+              </div>
+            </span>
+          </div>
+          <div class="popcont" id="third" >
+            <span class="firstpop"> <span id="close3" class="close" onclick="thirdclose()">X</span>
+              <img class="imagepop" src='./assets/three/Snapchat-304952830.jpg'>
+            <div class="pbreak">
+              <p class="thoughts">I know I said it about the first date, but this was truly the best. Actually being with you, being able to cuddle in your bed and sleep together. It was like we actually lived together and I want that feeling back. I'm just really glad we got to spend that time together even though half the time I was sick. You tried your best to help me and it was so sweet. I'd gladly take that sickness again as long as I get to be with you. 
+                Because there's no better feeling than having you in my arms. I promise next time we will cuddle more ❤️ Thank you for being in my life baby. I really appreciate you and everything you do. I wanted to make this different and go through some of the memories we made together. Those memories will stay with me forever, I'll never forget them. Happy Anniversary baby ❤️ I can't wait to spend time with you on the 1st. I love you with all my heart 💓😘🤗</p>
+            </div>
+           </span>
+          </div>
+
+
+          <a class="year one" onclick="firstpop()" src="./assets/one/PSX_20180602_210024.jpg">2018</a><a class="memories one"></a><a class="year two" onclick="secondpop()" src="./assets/one/PSX_20180602_210024.jpg">2018</a><a class="memories two"></a><a class="year three" onclick="thirdpop()" src="./assets/three/Snapchat-304952830.jpg">2019</a><a class="memories three"></a>
+          <div class="backimageright"><img class="first" src="./assets/one/Snapchat-328370971.jpg" draggable="false"><img class="second" src="./assets/two/IMG_20180801_132040_401.jpg" draggable="false"><img class="third" src="./assets/three/Snapchat-74755396.jpg" draggable="false"></div>
+      </div>
+    <!--<div class="parallax__layer parallax__layer--deep">-->
+    </div>
+
+
+
+    <div class="container3">
+      <div class="memoryhead" id="goodtimes" onclick="easteregg2()">Vacation999*</div>
+      </a><div class="boxcontny">
+        <div class="nycont" id="ny"><span class="nypop"><span id="closeny" class="close" onclick="nyclose()">X</span> <img class="imagepopny" src='./assets/ny/Snapchat-1587661231.jpg'>
+          <img class="imagepopny" src='./assets/ny/IMG_20180730_230516_791.jpg'> <img class="imagepopny" src='./assets/ny/Snapchat-67839376.jpg'> <img class="imagepopny" src='./assets/ny/Snapchat-1585317646.jpg'> <img class="imagepopny" src='./assets/ny/Snapchat-1386840545.jpg'> <img class="imagepopny" src='./assets/ny/Snapchat-289767508.jpg'> <img class="imagepopny" src='./assets/ny/Snapchat-1909992468.jpg'> <img class="imagepopny" src='./assets/ny/Snapchat-429313842.jpg'>
+          </span>
+        </div>
+
+
+        <a class="year ny" onclick="nypop()" src="./assets/ny/Snapchat-1587661231.jpg">New York</a><a class="memories ny"></a>
+        <div class="backimageright2"><img class="first" src="./assets/ny/IMG_20180731_131706.jpg" draggable="false"><img class="second" src="./assets/ny/MVIMG_20180730_185350.jpg" draggable="false"><img class="third" src="./assets/ny/MVIMG_20180731_183247.jpg" draggable="false"></div>
+    </div>
+  <!--<div class="parallax__layer parallax__layer--deep">-->
+  </div>
+
+
+
+
+
+    <div class="parallax__layer parallax__layer--deeper">
+    </div>
+    <div class="backimage"><img class="first" src="./assets/one/Snapchat-328370971.jpg"><img class="second" src="./assets/two/Snapchat-1227873441.jpg"><img class="third" src="./assets/three/Snapchat-304952830.jpg"></div>
+  </div>
+</body>
+</html>

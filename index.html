@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Password</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="container">
+    <div class="textcont">
+      <input type="password" id="pswd" class='psal' placeholder="Password" class="inputpass">
+      <input type="button" value="Submit" onclick="checkPswd();"/>
+  </div>
+</div>
+
+<!--Stop looking at the code-->
+<script type="text/javascript">
+    function checkPswd() {
+        var confirmPassword = "EMDZN999";
+        var password = document.getElementById("pswd").value;
+        if (password == confirmPassword) {
+             window.location="3years.html";
+        }
+        else{
+            alert("Passwords do not match.");
+        }
+    }
+</script>
+<div class="blur"></div>
+<div class="backimage"><img class="first" src="./assets/one/Snapchat-328370971.jpg"><img class="second" src="./assets/two/Snapchat-1227873441.jpg"><img class="third" src="./assets/three/Snapchat-304952830.jpg"></div>
+</body>
+</html>
