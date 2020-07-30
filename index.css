@@ -15,6 +15,11 @@ body {
 
 body, html { height: 100%; }
 
+div#content {
+    height:100%;
+    width: 100%;
+    }
+
  @font-face { font-family: Yessy; src: url('./assets/font/yessy.otf'); } 
 
 .container {
@@ -183,7 +188,7 @@ body, html { height: 100%; }
     position: absolute;
     height: 100%;
     overflow: hidden;
-    width: 100%;
+    width: 101%;
     background-size: contain;
 }
 
@@ -229,7 +234,7 @@ body, html { height: 100%; }
     position: absolute;
     height: 100%;
     overflow: hidden;
-    width: 100%;
+    width: 101%;
     background-size: contain;
 }
 
@@ -695,11 +700,13 @@ img {
     to {opacity:1 ;}
   }
 
-
-/* Pixel 3XL */
+.landscape {
+    display: none;
+}
+/* Pixel 3XL
   @media screen 
-  and (device-width: 824px) 
-  and (device-height: 412px) 
+  and (device-width: 980px) 
+  and (device-height: 480px) 
   and (-webkit-device-pixel-ratio: 1.7) 
   and (orientation: landscape) {
     .textcont {
@@ -768,13 +775,9 @@ img {
         overflow-y: scroll;
     }
 }
-
-.landscape {
-    display: none;
-}
 @media screen 
-and (device-width: 412px) 
-and (device-height: 824px) 
+and (device-width: 480px) 
+and (device-height: 980px) 
 and (-webkit-device-pixel-ratio: 1.7) 
 and (orientation: portrait) {
     body {
@@ -793,13 +796,13 @@ and (orientation: portrait) {
         color: white;
         margin: auto;
     }
-}
+} */
 
 
 /* Pixel 4XL */ 
 @media screen 
-and (device-width: 485px) 
-and (device-height: 1022px) 
+and (device-width: 480px) 
+and (device-height: 980px) 
 and (-webkit-device-pixel-ratio: 1.7) 
 and (orientation: portrait) {
     body {
@@ -821,9 +824,9 @@ and (orientation: portrait) {
 }
 
 @media screen 
-and (device-width: 1022px) 
-and (device-height: 485px) 
-and (-webkit-device-pixel-ratio: 1.7) 
+and (device-width: 980px) 
+and (device-height: 480px) 
+and (-webkit-device-pixel-ratio: 2.5) 
 and (orientation: landscape) {
     .textcont {
         margin: auto;
@@ -876,8 +879,8 @@ and (orientation: landscape) {
         font-size: 26px;
     }
     .imagepopny {
-        width: 289px;
-        height: 289px;
+        width: 277px;
+        height: 277px;
         left: 0;
         background-size: cover;
         display: inline-block;
