@@ -2,7 +2,9 @@
 
 <html lang="en">
 <head>
+  
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <link href="./assets/font/yessy.otf" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
 
@@ -11,7 +13,7 @@
   <audio id="audio" src="./assets/JW_-_Forever.mp3"></audio>
   <audio id="gt" src="./assets/Good Time.mp3"></audio>
 
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" type="text/css" href="index.css">
 
   <script>
     // Easter Egg //
@@ -77,6 +79,7 @@ function thirdpop() {
 function thirdclose() {
   var popup = document.getElementById("third");
   popup.classList.toggle("show");
+  popup.style.right= -(window.pageXOffset)
 }
 
 // NY Box //
@@ -87,6 +90,17 @@ function nypop() {
 function nyclose() {
   var popup = document.getElementById("nyclose");
   var actual = document.getElementById("ny")
+  actual.classList.toggle("show");
+}
+
+// JLY Box //
+function jlypop() {
+  var popup = document.getElementById("jly");
+  popup.classList.toggle("show");
+}
+function jlyclose() {
+  var popup = document.getElementById("jlyclose");
+  var actual = document.getElementById("jly")
   actual.classList.toggle("show");
 }
 </script>
@@ -103,11 +117,13 @@ function nyclose() {
     </div>-->
     <div class="parallax__layer parallax__layer--base">
       <div class="container" style="text-align: center;">
+        <a class="chevron"><img src="./assets/chevron.png"></a>
         </a><div class="textcont">
           <a class="heading">*3*</a>
           <a class="heading">Years*</a></div>
       </div>
       <div class="container2">
+        <a class="chevron" style="left: 191vw;"><img src="./assets/chevron.png"></a>
         <div class="memoryhead" id="foreverlove" onclick="easteregg()">Memories999*</div>
         </a><div class="boxcont">
           <div class="popcont" id="first"><span class="firstpop"><span id="close" class="close" onclick="firstclose()">X</span> <img class="imagepop" src='./assets/one/PSX_20180602_210024.jpg'><div class="pbreak">
@@ -136,7 +152,7 @@ function nyclose() {
 
 
           <a class="year one" onclick="firstpop()" src="./assets/one/PSX_20180602_210024.jpg">2018</a><a class="memories one"></a><a class="year two" onclick="secondpop()" src="./assets/one/PSX_20180602_210024.jpg">2018</a><a class="memories two"></a><a class="year three" onclick="thirdpop()" src="./assets/three/Snapchat-304952830.jpg">2019</a><a class="memories three"></a>
-          <div class="backimageright"><img class="first" src="./assets/one/Snapchat-328370971.jpg" draggable="false"><img class="second" src="./assets/two/IMG_20180801_132040_401.jpg" draggable="false"><img class="third" src="./assets/three/Snapchat-74755396.jpg" draggable="false"></div>
+          <div class="backimageright"><img class="first" src="./assets/one/Snapchat-328370971.jpg" draggable="false"><img class="second" src="./assets/two/IMG_20180801_132040_401.jpg" draggable="false"><img class="third" src="./assets/three/Snapchat-1420303897.jpg" draggable="false"></div>
       </div>
     <!--<div class="parallax__layer parallax__layer--deep">-->
     </div>
@@ -144,16 +160,26 @@ function nyclose() {
 
 
     <div class="container3">
-      <div class="memoryhead" id="goodtimes" onclick="easteregg2()">Vacation999*</div>
+      <div class="memoryhead" id="goodtimes" onclick="easteregg2()">Dates999*</div>
       </a><div class="boxcontny">
-        <div class="nycont" id="ny"><span class="nypop"><span id="closeny" class="close" onclick="nyclose()">X</span> <img class="imagepopny" src='./assets/ny/Snapchat-1587661231.jpg'>
+        <div class="nycont" id="ny"><span class="nypop"><span id="closeny" class="close" onclick="nyclose()">X</span> 
+          <img class="imagepopny" src='./assets/ny/Snapchat-1587661231.jpg'>
           <img class="imagepopny" src='./assets/ny/IMG_20180730_230516_791.jpg'> <img class="imagepopny" src='./assets/ny/Snapchat-67839376.jpg'> <img class="imagepopny" src='./assets/ny/Snapchat-1585317646.jpg'> <img class="imagepopny" src='./assets/ny/Snapchat-1386840545.jpg'> <img class="imagepopny" src='./assets/ny/Snapchat-289767508.jpg'> <img class="imagepopny" src='./assets/ny/Snapchat-1909992468.jpg'> <img class="imagepopny" src='./assets/ny/Snapchat-429313842.jpg'> <img class="imagepopny" src='./assets/ny/Snapchat-1549577882.jpg'>
           </span>
         </div>
 
+        <div class="jlycont" id="jly"><span class="jlypop"><span id="closejly" class="close" onclick="jlyclose()">X</span>
+          <div class="pbreak">
+            <p class="thoughts">This was my favorite date with you. I don't know why but it made me feel closer to you. We didn't really talk but being around you and making those grass bracelets made it such a good time. The fireworks were really intense, I've never seen so many at once lol. I really hope we get to have more dates like this ❤️</p>
+          </div> 
+          <img class="imagepopny" src='./assets/jly/IMG_20190706_205608 (1).jpg'>
+          <img class="imagepopny" src='./assets/jly/IMG_20190706_212825.jpg'> <img class="imagepopny" src='./assets/jly/IMG_20190706_212243.jpg'> <img class="imagepopny" src='./assets/jly/IMG_20190706_212302.jpg'> <img class="imagepopny" src='./assets/jly/00004IMG_00004_BURST20190706213935_COVER.jpg'> <img class="imagepopny" src='./assets/jly/IMG_20190706_212258 (2).jpg'> <img class="imagepopny" src='./assets/jly/00180IMG_00180_BURST20190706214359_COVER.jpg'> <img class="imagepopny" src='./assets/jly/IMG_20190706_213932.jpg'>
+          </span>
+        </div>
 
-        <a class="year ny" onclick="nypop()" src="./assets/ny/Snapchat-1587661231.jpg">New York</a><a class="memories ny"></a>
-        <div class="backimageright2"><img class="first" src="./assets/ny/IMG_20180731_131706.jpg" draggable="false"><img class="second" src="./assets/ny/MVIMG_20180730_185350.jpg" draggable="false"><img class="third" src="./assets/ny/MVIMG_20180731_183247.jpg" draggable="false"></div>
+
+        <a class="year ny" onclick="nypop()" src="./assets/ny/Snapchat-1587661231.jpg">New York</a><a class="memories ny"></a> <a class="year jly" onclick="jlypop()" src="./assets/three/IMG_20190706_214433.jpg">July 4th</a><a class="memories jly"></a>
+        <div class="backimageright2"><img class="first" src="./assets/ny/MVIMG_20180731_183247.jpg" draggable="false"><img class="second" src="./assets/ny/MVIMG_20180730_185350.jpg" draggable="false"><img class="third" src="./assets/jly/00180IMG_00180_BURST20190706214359_COVER.jpg" draggable="false"></div>
     </div>
   <!--<div class="parallax__layer parallax__layer--deep">-->
   </div>
@@ -164,7 +190,9 @@ function nyclose() {
 
     <div class="parallax__layer parallax__layer--deeper">
     </div>
-    <div class="backimage"><img class="first" src="./assets/one/Snapchat-328370971.jpg"><img class="second" src="./assets/two/Snapchat-1227873441.jpg"><img class="third" src="./assets/three/Snapchat-304952830.jpg"></div>
+    <div class='parallaxcont'>
+      <div class="backimage" id="firstp"><img class="first" src="./assets/one/Snapchat-328370971.jpg"><img class="second" src="./assets/two/Snapchat-1227873441.jpg"><img class="third" src="./assets/three/Snapchat-304952830.jpg"></div>
+   </div>
   </div>
 </body>
 </html>

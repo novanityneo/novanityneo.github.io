@@ -3,6 +3,7 @@ html {
     width: 100%;
     height: 100%;
     min-height: 100%;
+    touch-action: none;
 }
 body {
     background-color: white;
@@ -34,6 +35,8 @@ div#content {
     /*background-size: contain;
     background-image: url('flakes.png');*/
     background-color: transparent;
+    justify-content: center;
+    align-items: center;
 }
 .container2 {
     scroll-snap-align: start;
@@ -48,6 +51,8 @@ div#content {
     background-image: url('flakes.png');*/
     background-color: transparent;
     overflow-y: hidden;
+    justify-content: center;
+    align-items: center;
 }
 .container3 {
     scroll-snap-align: start;
@@ -161,28 +166,31 @@ div#content {
 }
 .heading {
     display: block;
+    color: #86b7b7;
     width: 100%;
     z-index: 3;
     line-height: 150px;
     word-wrap: break-word;
+    text-shadow: 0px 4px 17px #FFFFFF;
 }
 
 .heading:first-child {
     margin-left: 65px;
 }
 .backimage {
-    opacity: 20%;
+    opacity: 10%;
     top: 0;
-    left: 0;
     position: fixed;
     height: 100%;
     overflow: hidden;
     width: 100%;
     background-size: contain;
     z-index: -999;
+    filter: grayscale(1) blur(3px);
 }
+
 .backimageright {
-    opacity: 20%;
+    opacity: 10%;
     top: 0;
     left: 100vw;
     position: absolute;
@@ -190,6 +198,7 @@ div#content {
     overflow: hidden;
     width: 101%;
     background-size: contain;
+    filter: grayscale(1) blur(3px);
 }
 
 .backimageright .first {
@@ -228,7 +237,7 @@ div#content {
 }
 
 .backimageright2 {
-    opacity: 20%;
+    opacity: 10%;
     top: 0;
     left: 200vw;
     position: absolute;
@@ -236,6 +245,7 @@ div#content {
     overflow: hidden;
     width: 101%;
     background-size: contain;
+    filter: grayscale(1) blur(3px);
 }
 
 .backimageright2 .first {
@@ -356,10 +366,11 @@ br {
 .year.one {
     background-image: url('./assets/one/PSX_20180602_210024.jpg');
     background-size: contain;
-    filter: grayscale(90%);
+    filter: grayscale(50%);
     background-position-y: center;
     opacity: 70%;
     backdrop-filter: blur(5px);
+    border-radius: 20px;
 }
 
 .year.one:hover {
@@ -370,12 +381,13 @@ br {
 .year.two {
     background-image: url('./assets/two/Snapchat-647798265.jpg');
     background-size: contain;
-    filter: grayscale(90%);
+    filter: grayscale(50%);
     background-position-y: center;
     opacity: 70%;
     object-fit: cover;
     background-size: cover;
     backdrop-filter: blur(5px);
+    border-radius: 20px;
 }
 
 .year.two:hover {
@@ -386,12 +398,13 @@ br {
 .year.three {
     background-image: url('./assets/three/Snapchat-304952830.jpg');
     background-size: contain;
-    filter: grayscale(90%);
+    filter: grayscale(50%);
     background-position-y: center;
     opacity: 70%;
     object-fit: cover;
     background-size: cover;
     backdrop-filter: blur(5px);
+    border-radius: 20px;
 }
 
 .year.three:hover {
@@ -402,15 +415,33 @@ br {
 .year.ny {
     background-image: url('./assets/ny/Snapchat-1587661231.jpg');
     background-size: contain;
-    filter: grayscale(90%);
+    filter: grayscale(50%);
     background-position-y: center;
     opacity: 70%;
     object-fit: cover;
     background-size: cover;
     backdrop-filter: blur(5px);
+    border-radius: 20px;
 }
 
 .year.ny:hover {
+    filter: none;
+    transform: scale(1.1);
+}
+
+.year.jly {
+    background-image: url('./assets/three/IMG_20190706_214433.jpg');
+    background-size: contain;
+    filter: grayscale(50%);
+    background-position-y: center;
+    opacity: 70%;
+    object-fit: cover;
+    background-size: cover;
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+}
+
+.year.jly:hover {
     filter: none;
     transform: scale(1.1);
 }
@@ -431,6 +462,13 @@ br {
 
 .memories.ny {
     background-image: url('./assets/ny/Snapchat-1587661231.jpg');
+    background-size: cover;
+    filter: grayscale(90%);
+    background-position-y: center;
+}
+
+.memories.jly {
+    background-image: url('./assets/three/IMG_20190706_214433.jpg');
     background-size: cover;
     filter: grayscale(90%);
     background-position-y: center;
@@ -460,6 +498,20 @@ br {
     box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.20);
     z-index: 5;
     overflow-y: hidden;
+}
+
+.jlypop {
+    width: 85vw;
+    height: 90vh;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    -webkit-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.20);
+    -moz-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.20);
+    box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.20);
+    z-index: 5;
+    overflow-y: scroll;
 }
 
 .popcont {
@@ -512,6 +564,31 @@ br {
     background-size: contain;
 }
 
+.jlycont {
+    z-index: 6;
+    vertical-align: middle;
+    text-align: center;
+    margin: auto;
+    display: inline-flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    position: absolute;
+    left: 200vw;
+    top: 0;
+    align-items: center;
+    visibility: hidden;
+}
+
+.jlycont.show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+    background-image: url("./assets/paralax.png");
+    object-fit: cover;
+    background-size: contain;
+}
+
 .close {
     position: absolute;
     top: 10vh;
@@ -532,8 +609,7 @@ br {
 }
 
 .imagepopny {
-    width: 289px;
-    height: 313px;
+    width: 33.3%;
     left: 0;
     background-size: cover;
     display: inline-block;
@@ -606,6 +682,16 @@ br {
     white-space:normal
 }
 
+.jlypop .pbreak {
+    display: inline-block;
+    width: 33.3%;
+    top: 0;
+    bottom: 0;
+    float: right;
+    margin: 0;
+    white-space: normal;
+}
+
 p {
     display: block;
     margin-block-start: 1em;
@@ -625,6 +711,8 @@ p {
     z-index: 5;
     top: 25px;
     user-select: none;
+    text-shadow: 0px 4px 9px #FFFFFF;
+    color: #86b7b7;
 }
 
 input[type=button] {
@@ -690,6 +778,23 @@ img {
 }
 
 
+.chevron {
+    width: 10%;
+    position: absolute;
+    right: 0;
+    aspect-ratio: 1/1;
+}
+
+.chevron img {
+    width: 100%;
+    position: absolute;
+    right: 0;
+    aspect-ratio: 1/1;
+    filter: invert(1);
+    opacity: 0.6;
+    filter: invert(69%) sepia(37%) saturate(234%) hue-rotate(131deg) brightness(200%) contrast(90%);
+}
+
 @-webkit-keyframes fadeIn {
     from {opacity: 0;}
     to {opacity: 1;}
@@ -754,12 +859,24 @@ img {
         width: 40px;
         height: 40px;
     }
+
+    .jlypop .close {
+        position: absolute;
+        top: 10vh;
+        right: 10vw;
+        left: inherit;
+        font-size: 24px;
+        z-index: 9;
+        font-family: 'Roboto', sans-serif;
+        width: 40px;
+        height: 40px;
+    }
     .year.ny {
         font-size: 26px;
     }
     .imagepopny {
-        width: 239px;
-        height: 239px;
+        width: 33.3%;
+        height: 64.74%;
         left: 0;
         background-size: cover;
         display: inline-block;
@@ -771,6 +888,16 @@ img {
     }
     .nypop {
         overflow-y: scroll;
+    }
+    .jlypop .pbreak {
+        display: inline-block;
+        width: 33.3%;
+        height: 64.74%;
+        top: 0;
+        bottom: 0;
+        float: right;
+        margin: 0;
+        white-space: normal;
     }
 }
 @media screen 
@@ -874,8 +1001,8 @@ and (orientation: landscape) {
         font-size: 26px;
     }
     .imagepopny {
-        width: 246px;
-        height: 246px;
+        width: 33.3%;
+        height: 66.49%;
         left: 0;
         background-size: cover;
         display: inline-block;
@@ -887,5 +1014,15 @@ and (orientation: landscape) {
     }
     .nypop {
         overflow-y: scroll;
+    }
+    .jlypop .pbreak {
+        display: inline-block;
+        width: 33.3%;
+        height: 66.49%;
+        top: 0;
+        bottom: 0;
+        float: right;
+        margin: 0;
+        white-space: normal;
     }
 }
