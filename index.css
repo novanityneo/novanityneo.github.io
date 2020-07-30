@@ -705,8 +705,7 @@ img {
 }
 /* Pixel 3XL */
   @media screen 
-  and (device-width: 846px) 
-  and (device-height: 411px) 
+  and (min-width: 846px)
   and (orientation: landscape) {
     .textcont {
         margin: auto;
@@ -731,7 +730,7 @@ img {
         font-size: 30px;
     }
     .thoughts {
-        font-size: 22px;
+        font-size: 19px;
     }
     .thoughtsnyy {
         font-size: 14px;
@@ -759,8 +758,8 @@ img {
         font-size: 26px;
     }
     .imagepopny {
-        width: 233px;
-        height: 233px;
+        width: 239px;
+        height: 239px;
         left: 0;
         background-size: cover;
         display: inline-block;
@@ -775,8 +774,9 @@ img {
     }
 }
 @media screen 
-and (device-width: 411px) 
-and (device-height: 846px) 
+and (min-width: 411px) and (max-width: 767px)
+and (max-width: 767px) 
+and (min-height: 846px)
 and (orientation: portrait) {
     body {
         overflow-y: hidden;
@@ -799,8 +799,8 @@ and (orientation: portrait) {
 
 /* Pixel 4XL */ 
 @media screen 
-and (device-width: 411px) 
-and (device-height: 869px) 
+and (min-width: 411px)
+and (min-height: 869px)
 and (orientation: portrait) {
     body {
         overflow-y: hidden;
@@ -821,8 +821,7 @@ and (orientation: portrait) {
 }
 
 @media screen 
-and (device-width: 869px) 
-and (device-height: 411px) 
+and (min-width: 869px)
 and (orientation: landscape) {
     .textcont {
         margin: auto;
@@ -847,7 +846,7 @@ and (orientation: landscape) {
         font-size: 30px;
     }
     .thoughts {
-        font-size: 22px;
+        font-size: 19px;
     }
     .thoughtsnyy {
         font-size: 14px;
@@ -875,8 +874,8 @@ and (orientation: landscape) {
         font-size: 26px;
     }
     .imagepopny {
-        width: 277px;
-        height: 277px;
+        width: 246px;
+        height: 246px;
         left: 0;
         background-size: cover;
         display: inline-block;
