@@ -31,21 +31,35 @@ function easteregg() {
   }
 }
 
-    // Easter Egg 2//
-    var count = 0
+    /* Easter Egg 2
+    var count2 = 0
 function easteregg2() {
-  count++;
-  if (count == 10) {
+  count2++;
+  if (count2 == 10) {
     var sound = document.getElementById("gt");
     document.getElementById("goodtimes").innerHTML = "Good Times 999*";
     sound.play();
   }
-  if (count == 20) {
+  if (count2 == 20) {
     var sound = document.getElementById("gt");
     document.getElementById("goodtimes").innerHTML = "Vacation999*";
     sound.pause();
   }
-}
+} */
+
+    // Easter Egg 3//
+    var count3 = 0
+  function easteregg3() {
+    count3++;
+    console.log(count3)
+    if (count3 == 10) {
+      var crl1 = document.getElementById("crl1")
+      var crl2 = document.getElementById("crl2")
+      document.getElementById("goodtimes").innerHTML = "Dates + Curls*";
+      crl1.classList.toggle("show");
+      crl2.classList.toggle("show");
+    }
+  }
 
 // First Box //
 function firstpop() {
@@ -103,6 +117,17 @@ function jlyclose() {
   actual.classList.toggle("show");
 }
 
+// CRL Box //
+function crlpop() {
+  var popup = document.getElementById("crl");
+  popup.classList.toggle("show");
+}
+function crlclose() {
+  var popup = document.getElementById("crlclose");
+  var actual = document.getElementById("crl")
+  actual.classList.toggle("show");
+}
+
 </script>
 </head>
 
@@ -111,15 +136,30 @@ function jlyclose() {
     <h1 class="warning">Please Rotate Your Phone</h1>
   </div>
   <!--<script src="js/scripts.js"></script>-->
+  <div class=snap>
+    <div class="snapp">
+
+    </div>
+    <div class="snapp" style="left:100vw;">
+      
+    </div>
+    <div class="snapp" style="left:200vw;">
+
+    </div>
+  </div>
   <div class="parallax" data-scroll-container="">
     <!--<div class="parallax__layer parallax__layer--back">
     </div>-->
     <div class="parallax__layer parallax__layer--base">
       <div class="container" style="text-align: center;">
         <a class="chevron"><img src="./assets/chevron.png"></a>
-        </a><div class="textcont">
+        <div class="textcont" id="pandaee">
           <a class="heading rellax">*3*</a>
-          <a class="heading">Years*</a></div>
+          <a class="heading rellax">Years*</a>
+        </div>
+          <!--<div class='swiper-container'>
+            <div class="backimage" id="firstp"><img class="first" src="./assets/one/Snapchat-328370971.jpg" data-swiper-parallax="-300"><img class="second" src="./assets/two/Snapchat-1227873441.jpg"><img class="third" src="./assets/three/Snapchat-304952830.jpg"></div>
+         </div>-->
       </div>
       <div class="container2" >
         <a class="chevron" style="left: 191vw;"><img src="./assets/chevron.png"></a>
@@ -151,11 +191,11 @@ function jlyclose() {
 
 
           <a class="year one" onclick="firstpop()" src="./assets/one/PSX_20180602_210024.jpg">2018</a><a class="rellax memories one"></a><a class="year two" onclick="secondpop()" src="./assets/one/PSX_20180602_210024.jpg">2018</a><a class="memories two"></a><a class="year three" onclick="thirdpop()" src="./assets/three/Snapchat-304952830.jpg">2019</a><a class="memories three"></a>
-            <div class="backimageright">
+            <!--<div class="backimageright">
               <img class="first" src="./assets/one/Snapchat-328370971.jpg" draggable="false">
               <img class="second" src="./assets/two/IMG_20180801_132040_401.jpg" draggable="false">
               <img class="third" src="./assets/three/Snapchat-1420303897.jpg" draggable="false">
-            </div>
+            </div>-->
       </div>
     <!--<div class="parallax__layer parallax__layer--deep">-->
     </div>
@@ -163,7 +203,7 @@ function jlyclose() {
 
 
     <div class="container3">
-      <div class="memoryhead layer" id="goodtimes" onclick="easteregg2()">Dates999*</div>
+      <div class="memoryhead rellax" data-rellax-horizontal-speed="5" data-rellax-horizontal-axis="x" id="goodtimes" onclick="easteregg3()">Dates999*</div>
       </a><div class="boxcontny">
         <div class="nycont" id="ny"><span class="nypop"><span id="closeny" class="close" onclick="nyclose()">X</span> 
           <img class="imagepopny" src='./assets/ny/Snapchat-1587661231.jpg'>
@@ -180,18 +220,22 @@ function jlyclose() {
           </span>
         </div>
 
+        <div class="crlcont" id="crl"><span class="crlpop"><span id="closecrl" class="close" onclick="crlclose()">X</span>
+          <img class="imagepopny" src='./assets/crl/20200712_025528.jpg'>
+          <img class="imagepopny" src='./assets/crl/20200718_193031.jpg'> <img class="imagepopny" src='./assets/crl/IMG_20180818_225940_340.jpg'> <img class="imagepopny" src='./assets/crl/IMG_20190829_011053.jpg'> <img class="imagepopny" src='./assets/crl/IMG_20191007_233446.jpg'> <img class="imagepopny" src='./assets/crl/IMG_20200206_012152.jpg'> <img class="imagepopny" src='./assets/crl/IMG_20200302_034212.jpg'> <img class="imagepopny" src='./assets/crl/IMG_20200424_012915.jpg'> <img class="imagepopny" src='./assets/crl/IMG_20200502_061750.jpg'>
+          </span>
+        </div>
 
-        <a class="year ny" onclick="nypop()" src="./assets/ny/Snapchat-1587661231.jpg">New York</a><a class="memories ny"></a> <a class="year jly" onclick="jlypop()" src="./assets/three/IMG_20190706_214433.jpg">July 4th</a><a class="memories jly"></a>
-        <div class="backimageright2"><img class="first" src="./assets/ny/MVIMG_20180731_183247.jpg" draggable="false"><img class="second" src="./assets/ny/MVIMG_20180730_185350.jpg" draggable="false"><img class="third" src="./assets/jly/00180IMG_00180_BURST20190706214359_COVER.jpg" draggable="false"></div>
+
+        <a class="year ny" onclick="nypop()" src="./assets/ny/Snapchat-1587661231.jpg">New York</a><a class="memories ny"></a> <a class="year jly" onclick="jlypop()" src="./assets/three/IMG_20190706_214433.jpg">July 4th</a><a class="memories jly"></a> <a class="year crl" id="crl1"" onclick="crlpop()" src="./assets/crl/IMG_20200424_012915.jpg">Curls</a><a id="crl2" class="memories crl"></a>
+        <!--<div class="backimageright2"><img class="first" src="./assets/ny/MVIMG_20180731_183247.jpg" draggable="false"><img class="second" src="./assets/ny/MVIMG_20180730_185350.jpg" draggable="false"><img class="third" src="./assets/jly/00180IMG_00180_BURST20190706214359_COVER.jpg" draggable="false"></div>-->
     </div>
   <!--<div class="parallax__layer parallax__layer--deep">-->
   </div>
 
     <div class="parallax__layer parallax__layer--deeper">
     </div>
-    <div class='swiper-container'>
-      <div class="backimage" id="firstp"><img class="first" src="./assets/one/Snapchat-328370971.jpg" data-swiper-parallax="-300"><img class="second" src="./assets/two/Snapchat-1227873441.jpg"><img class="third" src="./assets/three/Snapchat-304952830.jpg"></div>
-   </div>
+  </div>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
   <script> var rellax = new Rellax('.rellax', { horizontal: true, vertical: false });</script>

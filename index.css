@@ -23,7 +23,7 @@ div#content {
 
  @font-face { font-family: Yessy; src: url('./assets/font/yessy.otf'); } 
 
-.container {
+ .container {
     scroll-snap-align: start;
     z-index: 2;
     vertical-align: middle;
@@ -32,12 +32,24 @@ div#content {
     display: inline-flex;
     width: 100%;
     height: 100vh;
-    /*background-size: contain;
-    background-image: url('flakes.png');*/
+    /*background-size: contain;*/
+    background-size: cover;
+    background-repeat: no-repeat;
     background-color: transparent;
     justify-content: center;
     align-items: center;
 }
+.container::before {
+    opacity: 10%;
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%; height: 100%;
+    background-image: url('./assets/bg1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter:grayscale(1) blur(3px)
+} 
 .container2 {
     scroll-snap-align: start;
     z-index: 2;
@@ -47,13 +59,24 @@ div#content {
     display: inline-flex;
     width: 100%;
     height: 100vh;
-    /*background-size: contain;
-    background-image: url('flakes.png');*/
+    background-size: cover;
+    background-repeat: no-repeat;
     background-color: transparent;
-    overflow-y: hidden;
     justify-content: center;
     align-items: center;
 }
+
+.container2::before {
+    opacity: 10%;
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%; height: 100%;
+    background-image: url('./assets/bg2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter:grayscale(1) blur(3px)
+} 
 .container3 {
     scroll-snap-align: start;
     z-index: 2;
@@ -63,11 +86,21 @@ div#content {
     display: inline-flex;
     width: 100%;
     height: 100vh;
-    /*background-size: contain;
-    background-image: url('flakes.png');*/
+    background-size: cover;
+    background-repeat: no-repeat;
     background-color: transparent;
-    overflow-y: scroll;
 }
+.container3::before {
+    opacity: 10%;
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%; height: 100%;
+    background-image: url('./assets/bg3.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter:grayscale(1) blur(3px)
+} 
 .overlay {
     position: fixed;
     vertical-align: middle;
@@ -447,6 +480,28 @@ br {
     transform: scale(1.1);
 }
 
+.year.crl {
+    background-image: url('./assets/crl/IMG_20200424_012915.jpg');
+    background-size: contain;
+    filter: grayscale(50%);
+    background-position-y: center;
+    opacity: 70%;
+    object-fit: cover;
+    background-size: cover;
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    visibility: hidden;
+}
+
+.year.crl.show {
+    visibility: visible;
+}
+
+.year.crl:hover {
+    filter: none;
+    transform: scale(1.1);
+}
+
 .memories.two {
     background-image: url('./assets/two/Snapchat-647798265.jpg');
     background-size: cover;
@@ -475,6 +530,19 @@ br {
     background-position-y: center;
 }
 
+.memories.crl {
+    background-image: url('./assets/crl/IMG_20200424_012915.jpg');
+    background-size: cover;
+    filter: grayscale(90%);
+    background-position-y: center;
+    visibility: hidden;
+    display: none;
+}
+
+.memories.crl.show {
+    display: inline-block;
+}
+
 .firstpop {
     width: 85vw;
     height: 90vh;
@@ -485,6 +553,7 @@ br {
     -moz-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.20);
     box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.20);
     z-index: 5;
+    border-radius: 40px;
 }
 
 .nypop {
@@ -502,6 +571,20 @@ br {
 }
 
 .jlypop {
+    width: 85vw;
+    height: 90vh;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    -webkit-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.20);
+    -moz-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.20);
+    box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.20);
+    z-index: 5;
+    overflow-y: scroll;
+}
+
+.crlpop {
     width: 85vw;
     height: 90vh;
     background-color: white;
@@ -590,6 +673,31 @@ br {
     background-size: contain;
 }
 
+.crlcont {
+    z-index: 6;
+    vertical-align: middle;
+    text-align: center;
+    margin: auto;
+    display: inline-flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    position: absolute;
+    left: 200vw;
+    top: 0;
+    align-items: center;
+    visibility: hidden;
+}
+
+.crlcont.show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+    background-image: url("./assets/paralax.png");
+    object-fit: cover;
+    background-size: contain;
+}
+
 .close {
     position: absolute;
     top: 10vh;
@@ -607,6 +715,7 @@ br {
     display: inline-block;
     object-fit: cover;
     opacity: 70%;
+    border-radius: 40px 0px 0px 40px;
 }
 
 .imagepopny {
@@ -794,6 +903,10 @@ img {
     filter: invert(1);
     opacity: 0.6;
     filter: invert(69%) sepia(37%) saturate(234%) hue-rotate(131deg) brightness(200%) contrast(90%);
+}
+
+.year {
+    border-radius: 40px!important;
 }
 
 @-webkit-keyframes fadeIn {
