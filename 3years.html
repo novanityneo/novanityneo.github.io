@@ -14,7 +14,6 @@
   <audio id="gt" src="./assets/Good Time.mp3"></audio>
 
   <link rel="stylesheet" type="text/css" href="index.css">
-
   <script>
     // Easter Egg //
     var count = 0
@@ -103,8 +102,8 @@ function jlyclose() {
   var actual = document.getElementById("jly")
   actual.classList.toggle("show");
 }
-</script>
 
+</script>
 </head>
 
 <body>
@@ -112,19 +111,19 @@ function jlyclose() {
     <h1 class="warning">Please Rotate Your Phone</h1>
   </div>
   <!--<script src="js/scripts.js"></script>-->
-  <div class="parallax">
+  <div class="parallax" data-scroll-container="">
     <!--<div class="parallax__layer parallax__layer--back">
     </div>-->
     <div class="parallax__layer parallax__layer--base">
       <div class="container" style="text-align: center;">
         <a class="chevron"><img src="./assets/chevron.png"></a>
         </a><div class="textcont">
-          <a class="heading">*3*</a>
+          <a class="heading rellax">*3*</a>
           <a class="heading">Years*</a></div>
       </div>
-      <div class="container2">
+      <div class="container2" >
         <a class="chevron" style="left: 191vw;"><img src="./assets/chevron.png"></a>
-        <div class="memoryhead" id="foreverlove" onclick="easteregg()">Memories999*</div>
+        <a class="memoryhead rellax" data-rellax-horizontal-speed="5" data-rellax-horizontal-axis="x" id="foreverlove" onclick="easteregg()">Memories999*</a>
         </a><div class="boxcont">
           <div class="popcont" id="first"><span class="firstpop"><span id="close" class="close" onclick="firstclose()">X</span> <img class="imagepop" src='./assets/one/PSX_20180602_210024.jpg'><div class="pbreak">
             <p id="thoughts1" class="thoughts">This was the happiest day in my life. Seeing you for the first time after such a long time made me feel whole again. 
@@ -151,8 +150,12 @@ function jlyclose() {
           </div>
 
 
-          <a class="year one" onclick="firstpop()" src="./assets/one/PSX_20180602_210024.jpg">2018</a><a class="memories one"></a><a class="year two" onclick="secondpop()" src="./assets/one/PSX_20180602_210024.jpg">2018</a><a class="memories two"></a><a class="year three" onclick="thirdpop()" src="./assets/three/Snapchat-304952830.jpg">2019</a><a class="memories three"></a>
-          <div class="backimageright"><img class="first" src="./assets/one/Snapchat-328370971.jpg" draggable="false"><img class="second" src="./assets/two/IMG_20180801_132040_401.jpg" draggable="false"><img class="third" src="./assets/three/Snapchat-1420303897.jpg" draggable="false"></div>
+          <a class="year one" onclick="firstpop()" src="./assets/one/PSX_20180602_210024.jpg">2018</a><a class="rellax memories one"></a><a class="year two" onclick="secondpop()" src="./assets/one/PSX_20180602_210024.jpg">2018</a><a class="memories two"></a><a class="year three" onclick="thirdpop()" src="./assets/three/Snapchat-304952830.jpg">2019</a><a class="memories three"></a>
+            <div class="backimageright">
+              <img class="first" src="./assets/one/Snapchat-328370971.jpg" draggable="false">
+              <img class="second" src="./assets/two/IMG_20180801_132040_401.jpg" draggable="false">
+              <img class="third" src="./assets/three/Snapchat-1420303897.jpg" draggable="false">
+            </div>
       </div>
     <!--<div class="parallax__layer parallax__layer--deep">-->
     </div>
@@ -160,7 +163,7 @@ function jlyclose() {
 
 
     <div class="container3">
-      <div class="memoryhead" id="goodtimes" onclick="easteregg2()">Dates999*</div>
+      <div class="memoryhead layer" id="goodtimes" onclick="easteregg2()">Dates999*</div>
       </a><div class="boxcontny">
         <div class="nycont" id="ny"><span class="nypop"><span id="closeny" class="close" onclick="nyclose()">X</span> 
           <img class="imagepopny" src='./assets/ny/Snapchat-1587661231.jpg'>
@@ -184,15 +187,13 @@ function jlyclose() {
   <!--<div class="parallax__layer parallax__layer--deep">-->
   </div>
 
-
-
-
-
     <div class="parallax__layer parallax__layer--deeper">
     </div>
-    <div class='parallaxcont'>
-      <div class="backimage" id="firstp"><img class="first" src="./assets/one/Snapchat-328370971.jpg"><img class="second" src="./assets/two/Snapchat-1227873441.jpg"><img class="third" src="./assets/three/Snapchat-304952830.jpg"></div>
+    <div class='swiper-container'>
+      <div class="backimage" id="firstp"><img class="first" src="./assets/one/Snapchat-328370971.jpg" data-swiper-parallax="-300"><img class="second" src="./assets/two/Snapchat-1227873441.jpg"><img class="third" src="./assets/three/Snapchat-304952830.jpg"></div>
    </div>
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
+  <script> var rellax = new Rellax('.rellax', { horizontal: true, vertical: false });</script>
 </body>
 </html>
