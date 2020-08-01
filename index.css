@@ -940,6 +940,7 @@ img {
         font-family: 'Yessy';
         font-size: 150px;
         align-items: center;
+        margin-top: 5%;
     }
     .heading {
         display: block;
@@ -1077,6 +1078,7 @@ and (orientation: landscape) {
         font-family: 'Yessy';
         font-size: 150px;
         align-items: center;
+        margin-top: 5%;
     }
     .heading {
         display: block;
