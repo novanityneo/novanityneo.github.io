@@ -14,6 +14,7 @@
   <audio id="gt" src="./assets/Good Time.mp3"></audio>
 
   <link rel="stylesheet" type="text/css" href="index.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
   <script>
     // Easter Egg //
     var count = 0
@@ -151,47 +152,51 @@ function crlclose() {
     <!--<div class="parallax__layer parallax__layer--back">
     </div>-->
     <div class="parallax__layer parallax__layer--base">
-      <div class="container" style="text-align: center;">
+      <div class="container" style="text-align: center;" id="scene3">
         <a class="chevron"><img src="./assets/chevron.png"></a>
-        <div class="textcont" id="pandaee">
-          <a class="heading rellax">*3*</a>
-          <a class="heading rellax">Years*</a>
+        <div class="pset2 tag" data-depth="0.2">
+          <div class="textcont" id="pandaee">
+            <a class="heading rellax">*3*</a>
+            <a class="heading rellax">Years*</a>
+          </div>
         </div>
           <!--<div class='swiper-container'>
             <div class="backimage" id="firstp"><img class="first" src="./assets/one/Snapchat-328370971.jpg" data-swiper-parallax="-300"><img class="second" src="./assets/two/Snapchat-1227873441.jpg"><img class="third" src="./assets/three/Snapchat-304952830.jpg"></div>
          </div>-->
       </div>
-      <div class="container2" >
-        <a class="chevron" style="left: 191vw;"><img src="./assets/chevron.png"></a>
-        <a class="memoryhead rellax" data-rellax-horizontal-speed="5" data-rellax-horizontal-axis="x" id="foreverlove" onclick="easteregg()">Memories999*</a>
-        </a><div class="boxcont">
-          <div class="popcont" id="first"><span class="firstpop"><span id="close" class="close" onclick="firstclose()">X</span> <img class="imagepop" src='./assets/one/PSX_20180602_210024.jpg'><div class="pbreak">
-            <p id="thoughts1" class="thoughts">This was the happiest day in my life. Seeing you for the first time after such a long time made me feel whole again. 
-              It's so hard to express how much you mean to me. To have you in my life is the greatest gift ever. I wish I could relive this day. This was also the day of our first kiss I believe. Onion breath but it was still great. I remember walking back home feeling so damn happy, the happiness was stronger than the sadness that you were leaving. That's how happy you make me ❤️</p>
-              </div>
-            </span>
+      <div class="popcont" id="first"><span class="firstpop"><span id="close" class="close" onclick="firstclose()">X</span> <img class="imagepop" src='./assets/one/PSX_20180602_210024.jpg'><div class="pbreak">
+        <p id="thoughts1" class="thoughts">This was the happiest day in my life. Seeing you for the first time after such a long time made me feel whole again. 
+          It's so hard to express how much you mean to me. To have you in my life is the greatest gift ever. I wish I could relive this day. This was also the day of our first kiss I believe. Onion breath but it was still great. I remember walking back home feeling so damn happy, the happiness was stronger than the sadness that you were leaving. That's how happy you make me ❤️</p>
           </div>
-            
-          <div class="popcont" id="second">
-            <span class="firstpop" id="firstpop"><span id="close2" class="close" onclick="secondclose()">X</span><img class="imagepop" src='./assets/two/Snapchat-647798265.jpg'>
-              <div class="pbreak">
-                <p class="thoughts">This is one of my favorite memories with you. I remember when we tweeted something about getting cinnabon and they responded. And then we actually got it. It's such a small thing but still made me happy. Being with you just felt so natural. There was no awkwardness. It was a day after our anniversary. I remember you opening your gift and you were so happy. It felt great that I could actually give that to you personally. And you got me big panda ❤️🐼</p>
-              </div>
-            </span>
+        </span>
+      </div>
+        
+      <div class="popcont" id="second">
+        <span class="firstpop" id="firstpop"><span id="close2" class="close" onclick="secondclose()">X</span><img class="imagepop" src='./assets/two/Snapchat-647798265.jpg'>
+          <div class="pbreak">
+            <p class="thoughts">This is one of my favorite memories with you. I remember when we tweeted something about getting cinnabon and they responded. And then we actually got it. It's such a small thing but still made me happy. Being with you just felt so natural. There was no awkwardness. It was a day after our anniversary. I remember you opening your gift and you were so happy. It felt great that I could actually give that to you personally. And you got me big panda ❤️🐼</p>
           </div>
-          <div class="popcont" id="third" >
-            <span class="firstpop"> <span id="close3" class="close" onclick="thirdclose()">X</span>
-              <img class="imagepop" src='./assets/three/Snapchat-304952830.jpg'>
-            <div class="pbreak">
-              <p class="thoughts">I know I said it about the first date, but this was truly the best. Actually being with you, being able to cuddle in your bed and sleep together. It was like we actually lived together and I want that feeling back. I'm just really glad we got to spend that time together even though half the time I was sick. You tried your best to help me and it was so sweet. I'd gladly take that sickness again as long as I get to be with you. 
-                Because there's no better feeling than having you in my arms. I promise next time we will cuddle more ❤️ Thank you for being in my life baby. I really appreciate you and everything you do. I wanted to make this different and go through some of the memories we made together. Those memories will stay with me forever, I'll never forget them. Happy Anniversary baby ❤️ I can't wait to spend time with you on the 1st. I love you with all my heart 💓😘🤗</p>
-            </div>
-           </span>
-          </div>
+        </span>
+      </div>
+      <div class="popcont" id="third" >
+        <span class="firstpop"> <span id="close3" class="close" onclick="thirdclose()">X</span>
+          <img class="imagepop" src='./assets/three/Snapchat-304952830.jpg'>
+        <div class="pbreak">
+          <p class="thoughts">I know I said it about the first date, but this was truly the best. Actually being with you, being able to cuddle in your bed and sleep together. It was like we actually lived together and I want that feeling back. I'm just really glad we got to spend that time together even though half the time I was sick. You tried your best to help me and it was so sweet. I'd gladly take that sickness again as long as I get to be with you. 
+            Because there's no better feeling than having you in my arms. I promise next time we will cuddle more ❤️ Thank you for being in my life baby. I really appreciate you and everything you do. I wanted to make this different and go through some of the memories we made together. Those memories will stay with me forever, I'll never forget them. Happy Anniversary baby ❤️ I can't wait to spend time with you on the 1st. I love you with all my heart 💓😘🤗</p>
+        </div>
+       </span>
+      </div>
+      <div class="container2" id="scene">
+        <a class="chevron"><img src="./assets/chevron.png"></a>
+        <a class="memoryhead tag" data-depth="0.2" data-rellax-horizontal-speed="5" data-rellax-horizontal-axis="x" id="foreverlove" onclick="easteregg()">Memories999*</a>
+        </a>
+        <div class="boxcont">
 
-
-          <a class="year one" onclick="firstpop()" src="./assets/one/PSX_20180602_210024.jpg">2018</a><a class="rellax memories one"></a><a class="year two" onclick="secondpop()" src="./assets/one/PSX_20180602_210024.jpg">2018</a><a class="memories two"></a><a class="year three" onclick="thirdpop()" src="./assets/three/Snapchat-304952830.jpg">2019</a><a class="memories three"></a>
-            <!--<div class="backimageright">
+          <div class="pset tag" data-depth="0.2">
+            <a class="year one" onclick="firstpop()" src="./assets/one/PSX_20180602_210024.jpg">2018</a><a class="memories one"></a><a class="year two" onclick="secondpop()" src="./assets/one/PSX_20180602_210024.jpg">2018</a><a class="memories two"></a><a class="year three" onclick="thirdpop()" src="./assets/three/Snapchat-304952830.jpg">2019</a><a class="memories three"></a>
+          </div>
+          <!--<div class="backimageright">
               <img class="first" src="./assets/one/Snapchat-328370971.jpg" draggable="false">
               <img class="second" src="./assets/two/IMG_20180801_132040_401.jpg" draggable="false">
               <img class="third" src="./assets/three/Snapchat-1420303897.jpg" draggable="false">
@@ -201,34 +206,34 @@ function crlclose() {
     </div>
 
 
+    <div class="nycont" id="ny"><span class="nypop"><span id="closeny" class="close" onclick="nyclose()">X</span> 
+      <img class="imagepopny" src='./assets/ny/Snapchat-1587661231.jpg'>
+      <img class="imagepopny" src='./assets/ny/IMG_20180730_230516_791.jpg'> <img class="imagepopny" src='./assets/ny/Snapchat-67839376.jpg'> <img class="imagepopny" src='./assets/ny/Snapchat-1585317646.jpg'> <img class="imagepopny" src='./assets/ny/Snapchat-1386840545.jpg'> <img class="imagepopny" src='./assets/ny/Snapchat-289767508.jpg'> <img class="imagepopny" src='./assets/ny/Snapchat-1909992468.jpg'> <img class="imagepopny" src='./assets/ny/Snapchat-429313842.jpg'> <img class="imagepopny" src='./assets/ny/Snapchat-1549577882.jpg'>
+      </span>
+    </div>
 
-    <div class="container3">
-      <div class="memoryhead rellax" data-rellax-horizontal-speed="5" data-rellax-horizontal-axis="x" id="goodtimes" onclick="easteregg3()">Dates999*</div>
+    <div class="jlycont" id="jly"><span class="jlypop"><span id="closejly" class="close" onclick="jlyclose()">X</span>
+      <div class="pbreak">
+        <p class="thoughts">This was my favorite date with you. I don't know why but it made me feel closer to you. We didn't really talk but being around you and making those grass bracelets made it such a good time. The fireworks were really intense, I've never seen so many at once lol. I really hope we get to have more dates like this ❤️</p>
+      </div> 
+      <img class="imagepopny" src='./assets/jly/IMG_20190706_205608 (1).jpg'>
+      <img class="imagepopny" src='./assets/jly/IMG_20190706_212825.jpg'> <img class="imagepopny" src='./assets/jly/IMG_20190706_212243.jpg'> <img class="imagepopny" src='./assets/jly/IMG_20190706_212302.jpg'> <img class="imagepopny" src='./assets/jly/00004IMG_00004_BURST20190706213935_COVER.jpg'> <img class="imagepopny" src='./assets/jly/IMG_20190706_212258 (2).jpg'> <img class="imagepopny" src='./assets/jly/00180IMG_00180_BURST20190706214359_COVER.jpg'> <img class="imagepopny" src='./assets/jly/IMG_20190706_213932.jpg'>
+      </span>
+    </div>
+
+    <div class="crlcont" id="crl"><span class="crlpop"><span id="closecrl" class="close" onclick="crlclose()">X</span>
+      <img class="imagepopny" src='./assets/crl/20200712_025528.jpg'>
+      <img class="imagepopny" src='./assets/crl/20200718_193031.jpg'> <img class="imagepopny" src='./assets/crl/IMG_20180818_225940_340.jpg'> <img class="imagepopny" src='./assets/crl/IMG_20190829_011053.jpg'> <img class="imagepopny" src='./assets/crl/IMG_20191007_233446.jpg'> <img class="imagepopny" src='./assets/crl/IMG_20200206_012152.jpg'> <img class="imagepopny" src='./assets/crl/IMG_20200302_034212.jpg'> <img class="imagepopny" src='./assets/crl/IMG_20200424_012915.jpg'> <img class="imagepopny" src='./assets/crl/IMG_20200502_061750.jpg'>
+      </span>
+    </div>
+    <div class="container3" id="scene2">
+      <div class="memoryhead tag" data-depth="0.2" data-rellax-horizontal-speed="5" data-rellax-horizontal-axis="x" id="goodtimes" onclick="easteregg3()">Dates999*</div>
       </a><div class="boxcontny">
-        <div class="nycont" id="ny"><span class="nypop"><span id="closeny" class="close" onclick="nyclose()">X</span> 
-          <img class="imagepopny" src='./assets/ny/Snapchat-1587661231.jpg'>
-          <img class="imagepopny" src='./assets/ny/IMG_20180730_230516_791.jpg'> <img class="imagepopny" src='./assets/ny/Snapchat-67839376.jpg'> <img class="imagepopny" src='./assets/ny/Snapchat-1585317646.jpg'> <img class="imagepopny" src='./assets/ny/Snapchat-1386840545.jpg'> <img class="imagepopny" src='./assets/ny/Snapchat-289767508.jpg'> <img class="imagepopny" src='./assets/ny/Snapchat-1909992468.jpg'> <img class="imagepopny" src='./assets/ny/Snapchat-429313842.jpg'> <img class="imagepopny" src='./assets/ny/Snapchat-1549577882.jpg'>
-          </span>
+
+        <div class="pset tag" data-depth="0.2">
+          <a class="year ny" onclick="nypop()" src="./assets/ny/Snapchat-1587661231.jpg">New York</a><a class="memories ny"></a> <a class="year jly" onclick="jlypop()" src="./assets/three/IMG_20190706_214433.jpg">July 4th</a><a class="memories jly"></a> <a class="year crl" id="crl1"" onclick="crlpop()" src="./assets/crl/IMG_20200424_012915.jpg">Curls</a><a id="crl2" class="memories crl"></a>
         </div>
-
-        <div class="jlycont" id="jly"><span class="jlypop"><span id="closejly" class="close" onclick="jlyclose()">X</span>
-          <div class="pbreak">
-            <p class="thoughts">This was my favorite date with you. I don't know why but it made me feel closer to you. We didn't really talk but being around you and making those grass bracelets made it such a good time. The fireworks were really intense, I've never seen so many at once lol. I really hope we get to have more dates like this ❤️</p>
-          </div> 
-          <img class="imagepopny" src='./assets/jly/IMG_20190706_205608 (1).jpg'>
-          <img class="imagepopny" src='./assets/jly/IMG_20190706_212825.jpg'> <img class="imagepopny" src='./assets/jly/IMG_20190706_212243.jpg'> <img class="imagepopny" src='./assets/jly/IMG_20190706_212302.jpg'> <img class="imagepopny" src='./assets/jly/00004IMG_00004_BURST20190706213935_COVER.jpg'> <img class="imagepopny" src='./assets/jly/IMG_20190706_212258 (2).jpg'> <img class="imagepopny" src='./assets/jly/00180IMG_00180_BURST20190706214359_COVER.jpg'> <img class="imagepopny" src='./assets/jly/IMG_20190706_213932.jpg'>
-          </span>
-        </div>
-
-        <div class="crlcont" id="crl"><span class="crlpop"><span id="closecrl" class="close" onclick="crlclose()">X</span>
-          <img class="imagepopny" src='./assets/crl/20200712_025528.jpg'>
-          <img class="imagepopny" src='./assets/crl/20200718_193031.jpg'> <img class="imagepopny" src='./assets/crl/IMG_20180818_225940_340.jpg'> <img class="imagepopny" src='./assets/crl/IMG_20190829_011053.jpg'> <img class="imagepopny" src='./assets/crl/IMG_20191007_233446.jpg'> <img class="imagepopny" src='./assets/crl/IMG_20200206_012152.jpg'> <img class="imagepopny" src='./assets/crl/IMG_20200302_034212.jpg'> <img class="imagepopny" src='./assets/crl/IMG_20200424_012915.jpg'> <img class="imagepopny" src='./assets/crl/IMG_20200502_061750.jpg'>
-          </span>
-        </div>
-
-
-        <a class="year ny" onclick="nypop()" src="./assets/ny/Snapchat-1587661231.jpg">New York</a><a class="memories ny"></a> <a class="year jly" onclick="jlypop()" src="./assets/three/IMG_20190706_214433.jpg">July 4th</a><a class="memories jly"></a> <a class="year crl" id="crl1"" onclick="crlpop()" src="./assets/crl/IMG_20200424_012915.jpg">Curls</a><a id="crl2" class="memories crl"></a>
-        <!--<div class="backimageright2"><img class="first" src="./assets/ny/MVIMG_20180731_183247.jpg" draggable="false"><img class="second" src="./assets/ny/MVIMG_20180730_185350.jpg" draggable="false"><img class="third" src="./assets/jly/00180IMG_00180_BURST20190706214359_COVER.jpg" draggable="false"></div>-->
+          <!--<div class="backimageright2"><img class="first" src="./assets/ny/MVIMG_20180731_183247.jpg" draggable="false"><img class="second" src="./assets/ny/MVIMG_20180730_185350.jpg" draggable="false"><img class="third" src="./assets/jly/00180IMG_00180_BURST20190706214359_COVER.jpg" draggable="false"></div>-->
     </div>
   <!--<div class="parallax__layer parallax__layer--deep">-->
   </div>
@@ -238,6 +243,20 @@ function crlclose() {
   </div>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
+  <script>
+    var scene = document.getElementById('scene');
+    var scene2 = document.getElementById('scene2');
+    var scene3 = document.getElementById('scene3');
+    var parallaxInstance = new Parallax(scene, {
+      selector: '.tag'
+    });
+    var parallaxInstance = new Parallax(scene2, {
+      selector: '.tag'
+    });
+    var parallaxInstance = new Parallax(scene3, {
+      selector: '.tag'
+    });
+  </script>
   <script> var rellax = new Rellax('.rellax', { horizontal: true, vertical: false });</script>
 </body>
 </html>
