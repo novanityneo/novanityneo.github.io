@@ -1179,3 +1179,87 @@ and (orientation: landscape) {
     border-radius: 50%;
     background-color: rgba(0,0,0,0.20);
 }
+
+.instructions {
+    opacity: 100;
+    width: 85vw;
+    height: 90vh;
+    display: block;
+    position: absolute;
+    background-color: #D4F9EF;
+    border-radius: 40px;
+    -webkit-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.20);
+    -moz-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.20);
+    box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.20);
+    z-index: 10;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    visibility: hidden;
+}
+
+.instructions .close {
+    left: 1vw;
+    top: 1vw;
+}
+
+.instructions .memoryhead {
+    margin-top: 2%;
+    color: white;
+    text-shadow: none;
+    position: unset!important;
+}
+
+.instructions.show {
+    visibility: visible;
+}
+
+.inst {
+    display: block;
+    margin: 0;
+    margin-top: 2%;
+}
+
+.icon {
+    user-select: none;
+    width: 90%;
+    aspect-ratio: 1/1;
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: invert(1);
+    border-radius: 80%;
+    background-color: rgba(0,0,0,0.50);
+}
+
+.desc {
+    display: inline-block;
+    margin-top: 1%;
+    font-size: 20px;
+    color: white;
+    word-wrap: normal;
+    width: 40vh;
+    text-align: center;
+}
+
+.onecont {
+    top: 0;
+    width: 40vh;
+    height: 50vh;
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+}
+
+.instcont {
+    height: 70%;
+}
+
+.landscape {
+    z-index: 999;
+    position: absolute;
+}

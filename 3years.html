@@ -129,12 +129,49 @@ function crlclose() {
   actual.classList.toggle("show");
 }
 
+// First load //
+window.onload = function() {
+    // Check if localStorage is available (IE8+) and make sure that the visited flag is not already set.
+    if(typeof window.localStorage !== "undefined" && !localStorage.getItem('visited')) {
+         // Set visited flag in local storage
+         localStorage.setItem('visited', true);
+         var actual = document.getElementById("inst")
+         actual.classList.toggle("show");
+         // Alert the user 
+    }
+}
+function instclose() {
+    var popup = document.getElementById("instclose");
+    var actual = document.getElementById("inst")
+    actual.classList.toggle("show");
+}
 </script>
 </head>
 
 <body>
   <div class="landscape">
     <h1 class="warning">Please Rotate Your Phone</h1>
+  </div>
+  <div class="instructions" id="inst">
+    <span id="close3" class="close" onclick="instclose()">X</span>
+    <h1 class="memoryhead">Happy 3rd Anniversary!</h1>
+    <div class="instcont">
+      <!--<div class="onecont">
+        <span class="icon one" style="background-image: url(./assets/gyro.png);"></span>
+        <br>
+        <a class="desc">Use gyroscope to move elements on the screen</a>
+      </div>-->
+      <div class="onecont">
+        <span class="icon two" style="background-image: url(./assets/land.png);"></span> 
+        <br>
+        <a class="desc">Stay in landscape mode</a>
+      </div>
+      <div class="onecont">
+        <span class="icon three" style="background-image: url(./assets/swipe.png);"></span>
+        <br>
+        <a class="desc">Swipe to naviagte pages</a>
+      </div>
+    </div>
   </div>
   <!--<script src="js/scripts.js"></script>-->
   <div class=snap>
@@ -154,7 +191,7 @@ function crlclose() {
     <div class="parallax__layer parallax__layer--base">
       <div class="container" style="text-align: center;" id="scene3">
         <a class="chevron"><img src="./assets/chevron.png"></a>
-        <div class="pset2 tag" data-depth="0.2">
+        <div class="pset2 tag" data-depth="0.4">
           <div class="textcont" id="pandaee">
             <a class="heading rellax">*3*</a>
             <a class="heading rellax">Years*</a>
@@ -193,7 +230,7 @@ function crlclose() {
         </a>
         <div class="boxcont">
 
-          <div class="pset tag" data-depth="0.2">
+          <div class="pset tag" data-depth="0.4">
             <a class="year one" onclick="firstpop()" src="./assets/one/PSX_20180602_210024.jpg">2018</a><a class="memories one"></a><a class="year two" onclick="secondpop()" src="./assets/one/PSX_20180602_210024.jpg">2018</a><a class="memories two"></a><a class="year three" onclick="thirdpop()" src="./assets/three/Snapchat-304952830.jpg">2019</a><a class="memories three"></a>
           </div>
           <!--<div class="backimageright">
@@ -230,7 +267,7 @@ function crlclose() {
       <div class="memoryhead tag" data-depth="0.2" data-rellax-horizontal-speed="5" data-rellax-horizontal-axis="x" id="goodtimes" onclick="easteregg3()">Dates999*</div>
       </a><div class="boxcontny">
 
-        <div class="pset tag" data-depth="0.2">
+        <div class="pset tag" data-depth="0.4">
           <a class="year ny" onclick="nypop()" src="./assets/ny/Snapchat-1587661231.jpg">New York</a><a class="memories ny"></a> <a class="year jly" onclick="jlypop()" src="./assets/three/IMG_20190706_214433.jpg">July 4th</a><a class="memories jly"></a> <a class="year crl" id="crl1"" onclick="crlpop()" src="./assets/crl/IMG_20200424_012915.jpg">Curls</a><a id="crl2" class="memories crl"></a>
         </div>
           <!--<div class="backimageright2"><img class="first" src="./assets/ny/MVIMG_20180731_183247.jpg" draggable="false"><img class="second" src="./assets/ny/MVIMG_20180730_185350.jpg" draggable="false"><img class="third" src="./assets/jly/00180IMG_00180_BURST20190706214359_COVER.jpg" draggable="false"></div>-->
