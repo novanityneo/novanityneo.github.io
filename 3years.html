@@ -10,6 +10,8 @@
 
   <title>3 Years 999</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="128x128" href="./assets/icon.png">
+  <link rel="icon" sizes="128x128" href="./assets/icon.png">
   <audio id="audio" src="./assets/JW_-_Forever.mp3"></audio>
   <audio id="gt" src="./assets/Good Time.mp3"></audio>
 
@@ -47,6 +49,22 @@ function easteregg2() {
     sound.pause();
   }
 } */
+var count4 = 0
+function easteregg4() {
+  count4++;
+  if (count4 == 10) {
+    var head1 = document.getElementById("head1");
+    var head2 = document.getElementById("head2");
+    head1.innerHTML = "I*";
+    head2.innerHTML = "Love you*";
+  }
+  if (count4 == 20) {
+    var head1 = document.getElementById("head1");
+    var head2 = document.getElementById("head2");
+    head1.innerHTML = "*3*";
+    head2.innerHTML = "Years*";
+  }
+}
 
     // Easter Egg 3//
     var count3 = 0
@@ -192,9 +210,9 @@ function instclose() {
       <div class="container" style="text-align: center;" id="scene3">
         <a class="chevron"><img src="./assets/chevron.png"></a>
         <div class="pset2 tag" data-depth="0.4">
-          <div class="textcont" id="pandaee">
-            <a class="heading rellax">*3*</a>
-            <a class="heading rellax">Years*</a>
+          <div class="textcont" onclick="easteregg4()" id="pandaee">
+            <a class="heading rellax" onclick="easteregg4()" id="head1">*3*</a>
+            <a class="heading rellax" onclick="easteregg4()" id="head2">Years*</a>
           </div>
         </div>
           <!--<div class='swiper-container'>

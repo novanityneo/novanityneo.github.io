@@ -197,6 +197,7 @@ div#content {
     font-family: Yessy;
     font-size: 300px;
     align-items: center;
+    pointer-events: all;
 }
 .heading {
     display: block;
@@ -205,6 +206,7 @@ div#content {
     line-height: 150px;
     word-wrap: break-word;
     text-shadow: 0px 4px 17px #FFFFFF;
+    touch-action: auto;
 }
 
 .heading:first-child {
