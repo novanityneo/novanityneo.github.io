@@ -25,7 +25,7 @@ div#content {
 
  .container {
     scroll-snap-align: start;
-    z-index: 2;
+    z-index: 90;
     vertical-align: middle;
     text-align: center;
     margin:0;
@@ -38,6 +38,7 @@ div#content {
     background-color: transparent;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 .container::before {
     opacity: 10%;
@@ -198,6 +199,7 @@ div#content {
     font-size: 300px;
     align-items: center;
     pointer-events: all;
+    margin-top: 15%!important;
 }
 .heading {
     display: block;
@@ -1265,4 +1267,10 @@ and (orientation: landscape) {
 .landscape {
     z-index: 999;
     position: absolute;
+}
+
+.starfield {
+    width: 130%;
+    height: 130%;
+    position: absolute!important;
 }
