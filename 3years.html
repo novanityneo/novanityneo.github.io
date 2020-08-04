@@ -53,6 +53,7 @@ function easteregg2() {
 var count4 = 0
 function easteregg4() {
   count4++;
+  console.log(count4)
   if (count4 == 10) {
     var head1 = document.getElementById("head1");
     var head2 = document.getElementById("head2");
@@ -286,16 +287,27 @@ function instclose() {
       </span>
     </div>
     <div class="container3" id="scene2">
-      <div class="memoryhead tag" data-depth="0.2" data-rellax-horizontal-speed="5" data-rellax-horizontal-axis="x" id="goodtimes" onclick="easteregg3()">Dates999*</div>
-      </a><div class="boxcontny">
-
+      <div class="memoryhead tag" data-depth="0.2" data-rellax-horizontal-speed="5" data-rellax-horizontal-axis="x" id="goodtimes" onclick="easteregg3()">Dates999*</div></a>
+      <div class="boxcontny">
         <div class="pset tag" data-depth="0.4">
           <a class="year ny" onclick="nypop()" src="./assets/ny/Snapchat-1587661231.jpg">New York</a><a class="memories ny"></a> <a class="year jly" onclick="jlypop()" src="./assets/three/IMG_20190706_214433.jpg">July 4th</a><a class="memories jly"></a> <a class="year crl" id="crl1"" onclick="crlpop()" src="./assets/crl/IMG_20200424_012915.jpg">Curls</a><a id="crl2" class="memories crl"></a>
         </div>
-          <!--<div class="backimageright2"><img class="first" src="./assets/ny/MVIMG_20180731_183247.jpg" draggable="false"><img class="second" src="./assets/ny/MVIMG_20180730_185350.jpg" draggable="false"><img class="third" src="./assets/jly/00180IMG_00180_BURST20190706214359_COVER.jpg" draggable="false"></div>-->
+      </div>
     </div>
-  <!--<div class="parallax__layer parallax__layer--deep">-->
-  </div>
+
+    <div class="container4" id="scene4">
+      <div class="memoryhead tag" data-depth="0.2" data-rellax-horizontal-speed="5" data-rellax-horizontal-axis="x" id="goodtimes">Past999*</div></a>
+      <div class="boxcontny">
+        <div class="pset tag" data-depth="0.4">
+          <a class="year bd18" href="./pages/Birthday/2018/index.html" src="./assets/three/IMG_20190706_214433.jpg">Birthday 2018*</a>
+          <a class="memories bd18"></a>
+          <a class="year vl19" href="./pages/Valentines/2019/index.html" src="./assets/one/Snapchat-1604446723.jpg">Valentines 2019*</a>
+          <a class="memories vl19"></a>
+          <a class="year vl20" href="./pages/Valentines/2020/index.html" src="./assets/three/IMG_20190706_214433.jpg">Valentines 2020*</a>
+          <a class="memories vl20"></a>
+        </div>
+      </div>
+    </div>
 
     <div class="parallax__layer parallax__layer--deeper">
     </div>
@@ -313,6 +325,9 @@ function instclose() {
       selector: '.tag'
     });
     var parallaxInstance = new Parallax(scene3, {
+      selector: '.tag'
+    });
+    var parallaxInstance = new Parallax(scene4, {
       selector: '.tag'
     });
   </script>

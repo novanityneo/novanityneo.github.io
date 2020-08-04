@@ -1,0 +1,258 @@
+html {
+    min-height:100%;
+}
+body {
+    margin: 0px;
+    background: #ffb8b9;
+    background: linear-gradient(45deg, rgba(255,184,185,1) 0%, rgba(254,218,220,1) 100%);
+    background-repeat: no-repeat;
+    height: 100%;
+    background-attachment: fixed;
+}
+
+.lettercont {
+    display: table-cell;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.letter {
+    display: inline-block;
+    width: 700px;
+    height: 400px;
+    background-color: #CA5C70;
+    margin: 0px;
+    -webkit-box-shadow: 0px 12px 19px 3px #F08F9B; 
+    box-shadow: 0px 12px 19px 3px #F08F9B;
+}
+
+.mail{
+    display: inline-block;
+    width: 700px;
+    height: 400px;
+    background: #D5808F;
+    position: relative;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 12px 19px 3px #F08F9B; 
+    box-shadow: 0px 12px 19px 3px #F08F9B;
+  }
+  
+  .mail:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-left: 240px solid Transparent;
+    border-right: 250px solid #B4394F;
+    border-top: 200px solid Transparent;
+    border-bottom: 200px solid #B4394F;
+    z-index: 5;
+  }
+  
+  .mail:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-left: 250px solid #CA5C70;
+    border-right: 240px solid Transparent;
+    border-top: 200px solid Transparent;
+    border-bottom: 200px solid #CA5C70;
+    z-index: 4;
+  }
+  
+  .cover:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-left: 350px solid transparent;
+    border-right: 350px solid transparent;
+    border-top: 285px solid #D5808F;
+    border-bottom: 200px solid transparent;
+    z-index: 6;
+    transform-origin: top;
+    transform: rotateX(0deg);
+    transition: all 1s 1s ease;
+}
+  
+  .letter{
+    position: absolute;
+    z-index: 2;
+    top: 0px;
+    left: 10px;
+    background: #fff;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#d9eaf3), color-stop(4%, #fff)) 0 4px;
+    background: -webkit-linear-gradient(top, #d9eaf3 0%, #fff 8%) 0 4px;
+    background: -moz-linear-gradient(top, #d9eaf3 0%, #fff 8%) 0 4px;
+    background: -ms-linear-gradient(top, #d9eaf3 0%, #fff 8%) 0 4px;
+    background: -o-linear-gradient(top, #d9eaf3 0%, #fff 8%) 0 4px;
+    background: linear-gradient(top, #d9eaf3 0%, #fff 8%) 0 4px;
+    -webkit-background-size: 100% 20px;
+    -moz-background-size: 100% 20px;
+    -ms-background-size: 100% 20px;
+    -o-background-size: 100% 20px;
+    background-size: 100% 20px;
+    width: 680px;
+    height: 380px;
+    transition: all 1s ease;
+  }
+  
+  .letter h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 80px;
+    color: #798992;
+    font-weight: 900;
+  }
+  
+  .mail:hover .cover:before{
+    transform: rotateX(180deg);
+    transition: all 1s ease;
+  }
+  
+  .mail:hover .letter{
+    top: -80px;
+    transition: all 1s 1s ease;
+  }
+
+  .letter .lettertxt {
+    line-height: 20px;
+    position: relative;
+    color: #798992;
+    display: inline-block;
+    width: 550px;
+    text-align: left;
+    font-family: 'Sriracha', cursive;
+    
+  }
+
+  .letteropen .lettertxt {
+    line-height: 20px;
+    position: relative;
+    color: #798992;
+    display: inline-block;
+    width: 50vw;
+    text-align: left;
+    font-family: 'Sriracha', cursive;
+    margin: 0px;
+    top: 25px;
+  }
+
+  .letter .lettertxt {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+  }
+
+  #closed {
+    visibility: hidden;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+    background: #fff;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#d9eaf3), color-stop(4%, #fff)) 0 4px;
+    background: -webkit-linear-gradient(top, #d9eaf3 0%, #fff 8%) 0 4px;
+    background: -moz-linear-gradient(top, #d9eaf3 0%, #fff 8%) 0 4px;
+    background: -ms-linear-gradient(top, #d9eaf3 0%, #fff 8%) 0 4px;
+    background: -o-linear-gradient(top, #d9eaf3 0%, #fff 8%) 0 4px;
+    background: linear-gradient(top, #d9eaf3 0%, #fff 8%) 0 4px;
+    -webkit-background-size: 100% 20px;
+    -moz-background-size: 100% 20px;
+    -ms-background-size: 100% 20px;
+    -o-background-size: 100% 20px;
+    background-size: 100% 20px;
+    width: 70%;
+    height: 90vh;
+    transition: all 0.2s fade;
+  }
+
+  @media (orientation: portrait) {
+    #closed {
+        background: #fff;
+        background: -webkit-gradient(linear, 0 0, 0 100%, from(#d9eaf3), color-stop(4%, #fff)) 0 4px;
+        background: -webkit-linear-gradient(top, #d9eaf3 0%, #fff 8%) 0 4px;
+        background: -moz-linear-gradient(top, #d9eaf3 0%, #fff 8%) 0 4px;
+        background: -ms-linear-gradient(top, #d9eaf3 0%, #fff 8%) 0 4px;
+        background: -o-linear-gradient(top, #d9eaf3 0%, #fff 8%) 0 4px;
+        background: linear-gradient(top, #d9eaf3 0%, #fff 8%) 0 4px;
+        -webkit-background-size: 100% 60px;
+        -moz-background-size: 100% 60px;
+        -ms-background-size: 100% 60px;
+        -o-background-size: 100% 60px;
+        background-size: 100% 60px;
+        width: 95%;
+        height: 90%;
+        overflow: scroll;
+      }
+
+      .letteropen .lettertxt {
+        line-height: 60px;
+        position: relative;
+        color: #798992;
+        display: inline-block;
+        width: 80vw;
+        height: 90%;
+        text-align: left;
+        font-family: 'Sriracha', cursive;
+        margin: 0px;
+        font-size: 30px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        overflow: scroll;
+      }
+
+      .songtitle {
+          font-size: 30px;
+      }
+  }
+  .songtitle {
+    font-size: 30px;
+    color: #CA5C70;
+  }
+
+  .audioplayer {
+      margin-top: 10px;
+      padding-bottom: 10px;
+  }
+  #closed::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    top: 0;
+    left: 30px;
+    bottom: 0;
+    border: 1px solid;
+    border-color: transparent #efe4e4;
+  }
+
+  #bg {
+      background-color: black;
+      opacity: 0.5;
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: 4;
+      visibility: hidden;
+  }
+
+  .musiccont {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+ }
+ .song {
+     width: 100%;
+     margin-top: 50px;
+ }
