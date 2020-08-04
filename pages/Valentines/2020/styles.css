@@ -137,7 +137,7 @@ body {
     position: relative;
     color: #798992;
     display: inline-block;
-    width: 50vw;
+    width: 55vw;
     text-align: left;
     font-family: 'Sriracha', cursive;
     margin: 0px;
@@ -148,7 +148,7 @@ body {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    user-select: none
+    user-select: none;
   }
 
   #closed {
@@ -175,6 +175,7 @@ body {
     width: 70%;
     height: 90vh;
     transition: all 0.2s fade;
+    overflow-y: scroll;
   }
 
   @media (orientation: portrait) {
